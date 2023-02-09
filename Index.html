@@ -31,14 +31,15 @@
                 you
                 want to
                 catch</label>
-            <input class="border-2 mt-5 max-w-sm text-lg" type="text" name="number" id="pokeNum"
-                placeholder="pokemon name or ID...">
+            <p class="sm:w-full sm:text-center mt-2">There are <b>1000</b> pokemons to choose!</p>
+            <input onkeypress="handle(event)" class="border-2 mt-5 max-w-sm text-lg" type="text" name="number"
+                id="pokeNum" placeholder="pokemon name or ID...">
             <div>
                 <input
-                    class="px-3 py-5 mr-5 sm:ml-4 mt-5 border-2 border-red-500 cursor-pointer rounded-full hover:bg-red-500 hover:border-black max-w-sm"
+                    class="px-3 py-5 mr-5 sm:ml-4 mt-5 border-2 border-red-500 cursor-pointer rounded-full hover:text-white hover:font-bold hover:bg-red-500 hover:border-black max-w-sm"
                     type="button" id="pokeButton" value="Catch">
                 <input type="button" value="Refresh" id="reload"
-                    class="p-2 sm:ml-4 mt-5 border-2 border-blue-600 cursor-pointer rounded hover:bg-blue-600 hover:text-white max-w-sm">
+                    class="p-2 sm:ml-4 mt-5 border-2 border-blue-600 cursor-pointer rounded hover:bg-blue-600 hover:font-bold hover:text-white max-w-sm">
             </div>
 
         </form>
@@ -47,11 +48,17 @@
     </section>
     <footer class="bg-sky-700 p-8 w-full flex justify-center mb-auto">
         <section>
-            <h3 class="font-bold text-amber-400">Powered with <a
-                    class="font-extrabold text-lg md:text-xl hover:underline" href="https://pokeapi.co/"
-                    target="_blank">PokeApi
-                    v2</a>
-            </h3>
+            <article class="flex justify-center items-center">
+                <h3 class="font-bold text-amber-400">Powered with <a
+                        class="font-extrabold text-lg md:text-xl hover:underline" href="https://pokeapi.co/"
+                        target="_blank">PokeApi
+                        v2</a>
+                </h3>
+                <a href="https://pokeapi.co/" target="_blank"><img class="w-16 ml-3"
+                        src="https://res.cloudinary.com/arawato666/image/upload/v1675981580/Leo-personal-projects/poke-removebg-preview_1_k972ko.png"
+                        alt="pokeapi logo"></a>
+            </article>
+
             <a href="https://github.com/leomed512" target="_blank"
                 class="text-white flex justify-center items-center mt-3">
                 <p>Checkout how it's buildt</p>
