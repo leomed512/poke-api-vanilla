@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Catch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://res.cloudinary.com/arawato666/image/upload/v1675958826/Leo-personal-projects/800px-Pok%C3%A9_Ball_icon.svg_1_v4zbxh.png"
+        type="image/x-icon" rel="shortcut icon">
+</head>
+
+<body>
+    <header class="bg-red-500 p-6 font-black sm:text-xl md:text-2xl w-full flex items-center">
+        <h1><a href="">Catch your Pokemón</a></h1>
+        <img class="w-10 ml-4"
+            src="https://res.cloudinary.com/arawato666/image/upload/v1675958826/Leo-personal-projects/800px-Pok%C3%A9_Ball_icon.svg_1_v4zbxh.png"
+            alt="pokemon logo">
+    </header>
+    <section class="mt-10 mb-20 h-screen">
+        <figure class="flex justify-center">
+            <img class="w-7/12 md:w-6/12 lg:w-4/12"
+                src="https://res.cloudinary.com/arawato666/image/upload/v1675957592/Leo-personal-projects/International_Pok%C3%A9mon_logo.svg_1_wzjqn1.png"
+                alt="pokemon logo">
+        </figure>
+
+        <form class="m-5 mt-10 md:mt-20 flex flex-col sm:flex-row sm:flex-wrap justify-center items-center" action="">
+            <label class="sm:w-full sm:text-center text-lg" for="">Enter the <b>name</b> or the <b>ID</b> of the pokemon
+                you
+                want to
+                catch</label>
+            <input class="border-2 mt-5 max-w-sm text-lg" type="text" name="number" id="pokeNum"
+                placeholder="pokemon name or ID...">
+            <div>
+                <input
+                    class="px-3 py-5 mr-5 sm:ml-4 mt-5 border-2 border-red-500 cursor-pointer rounded-full hover:bg-red-500 hover:border-black max-w-sm"
+                    type="button" id="pokeButton" value="Catch">
+                <input type="button" value="Refresh" id="reload"
+                    class="p-2 sm:ml-4 mt-5 border-2 border-blue-600 cursor-pointer rounded hover:bg-blue-600 hover:text-white max-w-sm">
+            </div>
+
+        </form>
+
+        <div class="flex justify-center items-center text-xl" id="poke"></div>
+    </section>
+    <footer class="bg-sky-700 p-8 w-full flex justify-center mb-auto">
+        <section>
+            <h3 class="font-bold text-amber-400">Powered with <a
+                    class="font-extrabold text-lg md:text-xl hover:underline" href="https://pokeapi.co/"
+                    target="_blank">PokeApi
+                    v2</a>
+            </h3>
+            <a href="https://github.com/leomed512" target="_blank"
+                class="text-white flex justify-center items-center mt-3">
+                <p>Checkout how it's buildt</p>
+                <img class="w-6 ml-3"
+                    src="https://res.cloudinary.com/arawato666/image/upload/v1675964239/Leo-personal-projects/gh_syzwft.png"
+                    alt="github logo">
+            </a>
+
+        </section>
+
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
